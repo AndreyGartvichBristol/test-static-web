@@ -17,7 +17,7 @@
             alert('Hi!');
             var text = await( await fetch(`/api/src/functions/message.js`));
             alert('Hi again!');
-            alert(text);
+            alert(text.toString());
             document.querySelector('#name').textContent = text;
         }());
         </script>
