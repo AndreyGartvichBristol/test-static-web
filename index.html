@@ -16,6 +16,7 @@
         (async function() {
             alert('Hi!');
             var text = await( await fetch(`/api/src/functions/message.js`));
+            alert('Hi again!');
             alert(text);
             document.querySelector('#name').textContent = text;
         }());
