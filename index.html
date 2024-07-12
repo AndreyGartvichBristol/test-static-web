@@ -10,10 +10,13 @@
     <h1>This is a test static app</h1>
     <img src="images/raven.png" width="500">
     <h2>Yes, it is! But not sure:(</h2>
-    <p>Loading message from the API: <b id="name">...</b></p>
+    <p>A message from the API: <b id="name">...</b></p>
     <script>
+
         (async function() {
+            alert('Hi!');
             const { text } = await( await fetch(`/api/src/functions/message`)).json();
+            alert(test);
             document.querySelector('#name').textContent = text;
         }());
         </script>
