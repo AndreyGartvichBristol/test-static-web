@@ -15,7 +15,7 @@
 
         (async function() {
             alert('Hi!');
-            var res = await fetch(`/api/src/functions/message.js`);
+            var res = (await fetch(`/api/src/functions/message.js`)).json();
             alert('Hi again!');
             alert(JSON.stringify(res));
             document.querySelector('#name').textContent = res.msg;
