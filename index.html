@@ -15,7 +15,7 @@
 
         (async function() {
             alert('Hi!');
-            const { text } = await (await fetch(`/api/src/index.js`)).json();
+            const { text } = await (await fetch(`/api/src`)).json();
             alert('Hi again!');
             alert(text);
             document.querySelector('#name').textContent = text;
