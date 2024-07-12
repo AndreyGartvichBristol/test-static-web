@@ -8,6 +8,6 @@ app.http('message', {
 
         const name = request.query.get('name') || await request.text() || 'world';
 
-        return 'Hello, ${name}!';
+        return {msg:'Hello, ${name}!'};
     }
 });
